@@ -1,0 +1,183 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    line-height: 1.6;
+    background-color: #111;
+    color: #ddd;
+    background-image: url('./imagens/fundo-textura.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Cabeçalho */
+#home h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: #fff;
+    font-family: 'Sawarabi Mincho', serif;
+    font-size: 2.5em;
+}
+
+/* Imagens dos jogos na página inicial */
+.imagens-jogos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.imagens-jogos img {
+    width: 150px;
+    height: auto;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    border: 2px solid #444;
+    border-radius: 5px;
+}
+
+.imagens-jogos img:hover {
+    transform: scale(1.1);
+    border-color: #fff;
+}
+
+/* Seção dos jogos */
+#jogos .jogo {
+    background: rgba(255, 255, 255, 0.1);
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#jogos .jogo img {
+    width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#jogos .jogo h3 {
+    margin-top: 10px;
+    color: #ff5555;
+    font-family: 'Sawarabi Mincho', serif;
+    font-size: 1.8em;
+}
+
+#jogos .jogo p {
+    margin-top: 10px;
+    color: #ddd;
+    font-size: 1.1em;
+}
+
+/* Seção de Gameplay */
+#gameplay .jogo {
+    background: rgba(255, 255, 255, 0.1);
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#gameplay .jogo h3 {
+    color: #ff5555;
+    font-family: 'Sawarabi Mincho', serif;
+    font-size: 1.8em;
+}
+
+#gameplay .jogo p {
+    color: #ddd;
+    font-size: 1.1em;
+}
+
+/* Formulário de contato */
+#contato {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #444;
+    border-radius: 5px;
+}
+
+#contato label {
+    display: block;
+    margin-top: 10px;
+    color: #ff5555;
+}
+
+#contato input, #contato textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #ddd;
+}
+
+#contato button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #ff5555;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+#contato button:hover {
+    background: #dd4444;
+}
+
+/* Rodapé */
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+footer .redes-sociais {
+    list-style: none;
+    padding: 0;
+}
+
+footer .redes-sociais li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer .redes-sociais img {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.2s;
+}
+
+footer .redes-sociais img:hover {
+    transform: scale(1.1);
+}
